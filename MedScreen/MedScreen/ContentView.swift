@@ -35,7 +35,7 @@ struct ContentView: View {
                     VStack(alignment: .leading) {
                         Text("Dr. Imran Sayahir")
                             .foregroundColor(Color("TextColor"))
-                            .font(.system(size: 25, weight: .bold, design: .default))
+                            .font(.system(size: 24, weight: .bold, design: .default))
                         Text("General Doctor")
                             .foregroundColor(Color("TextColor"))
                             .font(.system(size: 20, weight: .light, design: .default))
@@ -51,11 +51,13 @@ struct ContentView: View {
                     Image(systemName: "calendar")
                         .foregroundColor(Color("TextColor"))
                     Text("Sunday, 12 June")
+                        .font(.system(size: 15, weight: .light, design: .default))
                         .foregroundColor(Color("TextColor"))
                     Spacer()
                     Image(systemName: "clock.fill")
                         .foregroundColor(Color("TextColor"))
                     Text("11:00 - 12:00 AM")
+                        .font(.system(size: 15, weight: .light, design: .default))
                         .foregroundColor(Color("TextColor"))
                 }
                 .padding()
