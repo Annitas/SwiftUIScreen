@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  MedScreen
-//
-//  Created by Anita Stashevskaya on 14.11.2023.
-//
 
 import SwiftUI
 
@@ -15,7 +9,7 @@ struct ContentView: View {
                     Text("Hello")
                         .foregroundColor(.secondary)
                     Text("Hi James")
-                        .font(.title)
+                        .font(.system(size: 25, weight: .bold, design: .default))
                 }
                 Spacer()
                 Image("avatar")
@@ -27,15 +21,44 @@ struct ContentView: View {
                             }
                     .shadow(radius: 7)
             }
-            HStack {
-                Text("Hello")
+            VStack {
+                HStack() {
+                Image("avatar")
+                    .resizable()
+                    .frame(width: 60, height: 60)
+                    .clipShape(Circle())
+                    .overlay{
+                        Circle().stroke(.secondary, lineWidth: 2)
+                            }
+                    .shadow(radius: 7)
                     .padding()
-                Divider()
+                    VStack(alignment: .leading) {
+                        Text("Dr. Imran Sayahir")
+                            .foregroundColor(Color("TextColor"))
+                            .font(.system(size: 25, weight: .bold, design: .default))
+                        Text("General Doctor")
+                            .foregroundColor(Color("TextColor"))
+                            .font(.system(size: 20, weight: .light, design: .default))
+                    }
                     Spacer()
+                }
+                Divider()
+                    .background(Color.white)
+                HStack {
+                    Image(systemName: "clock.fill")
+                        .foregroundColor(Color("TextColor"))
+                    Text("Sunday, 12 June")
+                        .foregroundColor(Color("TextColor"))
+                    Spacer()
+                    Text("11:00 - 12:00 AM")
+                        .foregroundColor(Color("TextColor"))
+                }
+                .padding()
+                
             }
-            .background(Color.blue)
+            .background(Color("DateBlue"))
             .frame(width: UIScreen.main.bounds.width - 40,
-                   height: 185)
+                   height: 150)
             .cornerRadius(10)
             Spacer()
             
