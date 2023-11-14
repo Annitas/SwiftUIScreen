@@ -40,6 +40,9 @@ struct ContentView: View {
                             .foregroundColor(Color("TextColor"))
                             .font(.system(size: 20, weight: .light, design: .default))
                     }
+                    Image(systemName: "arrow.right.circle")
+                        .foregroundColor(Color("TextColor"))
+                        .font(.system(size: 25))
                     Spacer()
                 }
                 Divider()
