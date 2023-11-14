@@ -48,23 +48,26 @@ struct ContentView: View {
                 Divider()
                     .background(Color.white)
                 HStack {
-                    Image(systemName: "clock.fill")
+                    Image(systemName: "calendar")
                         .foregroundColor(Color("TextColor"))
                     Text("Sunday, 12 June")
                         .foregroundColor(Color("TextColor"))
                     Spacer()
+                    Image(systemName: "clock.fill")
+                        .foregroundColor(Color("TextColor"))
                     Text("11:00 - 12:00 AM")
                         .foregroundColor(Color("TextColor"))
                 }
                 .padding()
-                
             }
             .background(Color("DateBlue"))
             .frame(width: UIScreen.main.bounds.width - 40,
                    height: 150)
             .cornerRadius(10)
-            Spacer()
             
+            
+            
+            Spacer()
         }
         .padding()
     }
