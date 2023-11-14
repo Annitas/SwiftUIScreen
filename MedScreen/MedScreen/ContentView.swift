@@ -60,7 +60,7 @@ struct ContentView: View {
                         .font(.system(size: 15, weight: .light, design: .default))
                         .foregroundColor(Color("TextColor"))
                 }
-                .padding()
+                .padding(8)
             }
             .background(Color("DateBlue"))
             .frame(width: UIScreen.main.bounds.width - 40,
@@ -68,6 +68,19 @@ struct ContentView: View {
             .cornerRadius(10)
             
             
+            VStack {
+                HStack {
+                    Image(systemName: "magnifyingglass.circle")
+                        .foregroundColor(Color.gray)
+                        .font(.system(size: 25))
+                    Spacer()
+                }
+                .padding(8)
+            }
+            .background(Color("Magnifyer"))
+            .frame(width: UIScreen.main.bounds.width - 40,
+                   height: 40)
+            .cornerRadius(10)
             
             Spacer()
         }
