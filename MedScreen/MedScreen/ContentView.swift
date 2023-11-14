@@ -73,6 +73,9 @@ struct ContentView: View {
                     Image(systemName: "magnifyingglass.circle")
                         .foregroundColor(Color.gray)
                         .font(.system(size: 25))
+                    Text("Search doctor or health issue")
+                        .font(.system(size: 15, weight: .light, design: .default))
+                        .foregroundColor(Color("SearchText"))
                     Spacer()
                 }
                 .padding(8)
