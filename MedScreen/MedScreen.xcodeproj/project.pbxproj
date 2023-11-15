@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758CF8ED2B051BD600A4B493 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CF8EC2B051BD600A4B493 /* MainView.swift */; };
 		759313652B0397A80088B015 /* MedScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759313642B0397A80088B015 /* MedScreenApp.swift */; };
 		759313672B0397A80088B015 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759313662B0397A80088B015 /* ContentView.swift */; };
 		759313692B0397AA0088B015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759313682B0397AA0088B015 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		758CF8EC2B051BD600A4B493 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		759313612B0397A80088B015 /* MedScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759313642B0397A80088B015 /* MedScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedScreenApp.swift; sourceTree = "<group>"; };
 		759313662B0397A80088B015 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				759313662B0397A80088B015 /* ContentView.swift */,
 				759313682B0397AA0088B015 /* Assets.xcassets */,
 				7593136A2B0397AA0088B015 /* Preview Content */,
+				758CF8EC2B051BD600A4B493 /* MainView.swift */,
 			);
 			path = MedScreen;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				759313672B0397A80088B015 /* ContentView.swift in Sources */,
+				758CF8ED2B051BD600A4B493 /* MainView.swift in Sources */,
 				759313652B0397A80088B015 /* MedScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

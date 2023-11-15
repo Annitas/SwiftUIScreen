@@ -1,47 +1,30 @@
-//
-//  ContentView.swift
-//  MedScreen
-//
-//  Created by Anita Stashevskaya on 14.11.2023.
-//
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text("Hello")
-                        .foregroundColor(.secondary)
-                    Text("Hi James")
-                        .font(.title)
+        TabView {
+            MainView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
                 }
-                Spacer()
-                Image("avatar")
-                    .resizable()
-                    .frame(width: 60, height: 60)
-                    .clipShape(Circle())
-                    .overlay{
-                        Circle().stroke(.gray, lineWidth: 2)
-                            }
-                    .shadow(radius: 7)
-            }
-            HStack {
-                Text("Hello")
-                    .padding()
-                Divider()
-                    Spacer()
-            }
-            .background(Color.blue)
-            .frame(width: UIScreen.main.bounds.width - 40,
-                   height: 185)
-            .cornerRadius(10)
-            Spacer()
-            
+            Text("Calendar")
+                .tabItem {
+                    
+                    Label("Calendar", systemImage: "calendar")
+                }
+            Text("Chat")
+                .tabItem {
+                    
+                    Label("Chat", systemImage: "message")
+                }
+            Text("Account")
+                .tabItem {
+                    
+                    Label("Account", systemImage: "person.fill")
+                }
         }
-        .padding()
-    }
+    }    
 }
 
 struct ContentView_Previews: PreviewProvider {
