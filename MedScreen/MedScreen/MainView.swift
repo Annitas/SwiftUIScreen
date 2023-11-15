@@ -66,7 +66,7 @@ struct MainView: View {
                 .frame(width: UIScreen.main.bounds.width - 35,
                        height: 150)
                 .cornerRadius(10)
-                // Search
+// Search
                 VStack {
                     HStack {
                         Image(systemName: "magnifyingglass.circle")
@@ -84,7 +84,7 @@ struct MainView: View {
                        height: 40)
                 .cornerRadius(10)
                 
-                //Circle menu
+ //Circle menu
                 HStack {
                     let circleSize = UIScreen.main.bounds.width/4 - 15
                     VStack {
@@ -150,7 +150,7 @@ struct MainView: View {
                     }
                 }
                 Spacer()
-                //Near doctor
+ //Near doctor
                 Text("Near Doctor")
                     .font(.system(size: 20, weight: .bold, design: .default))
                 VStack {
@@ -254,5 +254,11 @@ struct MainView: View {
             }
             .padding()
         }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }
