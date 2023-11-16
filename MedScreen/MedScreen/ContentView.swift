@@ -16,7 +16,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Chat", systemImage: "message")
                 }
-            Text("Account")
+            AccountView()
                 .tabItem {
                     
                     Label("Account", systemImage: "person.fill")
