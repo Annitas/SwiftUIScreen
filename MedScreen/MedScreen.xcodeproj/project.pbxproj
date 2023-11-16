@@ -20,13 +20,9 @@
 		759313672B0397A80088B015 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759313662B0397A80088B015 /* ContentView.swift */; };
 		759313692B0397AA0088B015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759313682B0397AA0088B015 /* Assets.xcassets */; };
 		7593136C2B0397AA0088B015 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7593136B2B0397AA0088B015 /* Preview Assets.xcassets */; };
-		E3D207D4C0E74E7D9CE1E498 /* Pods_MedScreen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68CD2A187695FF82BEBC5ADF /* Pods_MedScreen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10FBCF202D79959AF9F180E4 /* Pods-MedScreen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedScreen.debug.xcconfig"; path = "Target Support Files/Pods-MedScreen/Pods-MedScreen.debug.xcconfig"; sourceTree = "<group>"; };
-		2F84464B71448CA3F14D8657 /* Pods-MedScreen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedScreen.release.xcconfig"; path = "Target Support Files/Pods-MedScreen/Pods-MedScreen.release.xcconfig"; sourceTree = "<group>"; };
-		68CD2A187695FF82BEBC5ADF /* Pods_MedScreen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedScreen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		758CF8EC2B051BD600A4B493 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		758CF8EE2B05290E00A4B493 /* DoctorsCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsCardView.swift; sourceTree = "<group>"; };
 		758CF8F02B05EED500A4B493 /* GreetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
@@ -48,7 +44,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D207D4C0E74E7D9CE1E498 /* Pods_MedScreen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,8 +53,6 @@
 		224EE74565696F1B9F035425 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				10FBCF202D79959AF9F180E4 /* Pods-MedScreen.debug.xcconfig */,
-				2F84464B71448CA3F14D8657 /* Pods-MedScreen.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -107,7 +100,6 @@
 				759313632B0397A80088B015 /* MedScreen */,
 				759313622B0397A80088B015 /* Products */,
 				224EE74565696F1B9F035425 /* Pods */,
-				F0DECCC2993DF65ABC990D0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,14 +134,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F0DECCC2993DF65ABC990D0C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				68CD2A187695FF82BEBC5ADF /* Pods_MedScreen.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,11 +141,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7593136F2B0397AA0088B015 /* Build configuration list for PBXNativeTarget "MedScreen" */;
 			buildPhases = (
-				37BA30BB4CF3A7CAE8130337 /* [CP] Check Pods Manifest.lock */,
 				7593135D2B0397A80088B015 /* Sources */,
 				7593135E2B0397A80088B015 /* Frameworks */,
 				7593135F2B0397A80088B015 /* Resources */,
-				6A83B97BD15DC4D970ED5593 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,48 +198,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		37BA30BB4CF3A7CAE8130337 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MedScreen-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A83B97BD15DC4D970ED5593 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MedScreen/Pods-MedScreen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MedScreen/Pods-MedScreen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MedScreen/Pods-MedScreen-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7593135D2B0397A80088B015 /* Sources */ = {
@@ -397,7 +337,6 @@
 		};
 		759313702B0397AA0088B015 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10FBCF202D79959AF9F180E4 /* Pods-MedScreen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -427,7 +366,6 @@
 		};
 		759313712B0397AA0088B015 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F84464B71448CA3F14D8657 /* Pods-MedScreen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
