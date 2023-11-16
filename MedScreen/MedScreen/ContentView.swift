@@ -12,9 +12,8 @@ struct ContentView: View {
                 .tabItem {
                     Label("Calendar", systemImage: "calendar")
                 }
-            Text("Chat")
+            ChatView()
                 .tabItem {
-                    
                     Label("Chat", systemImage: "message")
                 }
             Text("Account")
