@@ -8,9 +8,8 @@ struct ContentView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            Text("Calendar")
+            CalendarTab()
                 .tabItem {
-                    
                     Label("Calendar", systemImage: "calendar")
                 }
             Text("Chat")
