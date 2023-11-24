@@ -24,7 +24,6 @@ struct CalendarTab: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text("Calendar")
-//                .foregroundColor(Color("TextColor"))
                 .font(.system(size: 24, weight: .bold, design: .default))
             .padding(8)
             CalendarView(interval: DateInterval(start: .distantPast, end: .distantFuture))

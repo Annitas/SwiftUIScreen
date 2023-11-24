@@ -13,8 +13,8 @@ struct ChatMessageView: View {
     var body: some View {
         Text(message)
             .padding()
-            .background(Color.blue)
-            .foregroundColor(Color("TextColor"))
+            .background(AllColors().blue)
+            .foregroundColor(AllColors().basicTextColor)
             .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
             .listRowSeparator(.hidden)
             .overlay(alignment: direction == .left ? .bottomLeading : .bottomTrailing) {

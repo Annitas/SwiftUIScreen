@@ -16,14 +16,14 @@ struct BlueDocCardView: View {
                     .padding()
                 VStack(alignment: .leading) {
                     Text("Dr. Imran Sayahir")
-                        .foregroundColor(Color("TextColor"))
+                        .foregroundColor(AllColors().basicTextColor)
                         .font(.system(size: 24, weight: .bold, design: .default))
                     Text("General Doctor")
-                        .foregroundColor(Color("TextColor"))
+                        .foregroundColor(AllColors().basicTextColor)
                         .font(.system(size: 20, weight: .light, design: .default))
                 }
                 Image(systemName: "arrow.right.circle")
-                    .foregroundColor(Color("TextColor"))
+                    .foregroundColor(AllColors().basicTextColor)
                     .font(.system(size: 25))
                 Spacer()
             }
@@ -31,20 +31,20 @@ struct BlueDocCardView: View {
                 .background(Color.white)
             HStack {
                 Image(systemName: "calendar")
-                    .foregroundColor(Color("TextColor"))
+                    .foregroundColor(AllColors().basicTextColor)
                 Text("Sunday, 12 June")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(Color("TextColor"))
+                    .foregroundColor(AllColors().basicTextColor)
                 Spacer()
                 Image(systemName: "clock.fill")
-                    .foregroundColor(Color("TextColor"))
+                    .foregroundColor(AllColors().basicTextColor)
                 Text("11:00 - 12:00 AM")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(Color("TextColor"))
+                    .foregroundColor(AllColors().basicTextColor)
             }
             .padding(8)
         }
-        .background(Color("DateBlue"))
+        .background(AllColors().dateTextColor)
         .frame(width: UIScreen.main.bounds.width - 35,
                height: 150)
         .cornerRadius(10)

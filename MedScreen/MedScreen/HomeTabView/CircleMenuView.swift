@@ -8,63 +8,63 @@ struct CircleMenuView: View {
             VStack {
                 ZStack{
                     Circle()
-                        .fill(Color("Magnifyer"))
+                        .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
                     Image(systemName: "bubbles.and.sparkles")
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
-                        .foregroundColor(Color("DateBlue"))
+                        .foregroundColor(AllColors().dateTextColor)
                 }
                 Text("Covid 19")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(Color("SearchText"))
+                    .foregroundColor(AllColors().searchTextColor)
             }
             VStack {
                 ZStack{
                     Circle()
-                        .fill(Color("Magnifyer"))
+                        .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
                     Image(systemName: "brain.head.profile")
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
-                        .foregroundColor(Color("DateBlue"))
+                        .foregroundColor(AllColors().dateTextColor)
                 }
                 Text("Doctor")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(Color("SearchText"))
+                    .foregroundColor(AllColors().searchTextColor)
             }
             
             VStack {
                 ZStack{
                     Circle()
-                        .fill(Color("Magnifyer"))
+                        .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
                     Image(systemName: "pills.fill")
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
-                        .foregroundColor(Color("DateBlue"))
+                        .foregroundColor(AllColors().dateTextColor)
                 }
                 Text("Medicine")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(Color("SearchText"))
+                    .foregroundColor(AllColors().searchTextColor)
             }
             VStack {
                 ZStack{
                     Circle()
-                        .fill(Color("Magnifyer"))
+                        .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
                     Image(systemName: "cross.case.fill")
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
-                        .foregroundColor(Color("DateBlue"))
+                        .foregroundColor(AllColors().dateTextColor)
                 }
                 Text("Hospital")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(Color("SearchText"))
+                    .foregroundColor(AllColors().searchTextColor)
             }
         }
     }

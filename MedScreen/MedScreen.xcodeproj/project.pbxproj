@@ -20,6 +20,8 @@
 		759313672B0397A80088B015 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759313662B0397A80088B015 /* ContentView.swift */; };
 		759313692B0397AA0088B015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759313682B0397AA0088B015 /* Assets.xcassets */; };
 		7593136C2B0397AA0088B015 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7593136B2B0397AA0088B015 /* Preview Assets.xcassets */; };
+		75B38E5B2B108B54000CF6EF /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B38E5A2B108B54000CF6EF /* ColorPalette.swift */; };
+		75B38E5D2B108B6F000CF6EF /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B38E5C2B108B6F000CF6EF /* Typography.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		759313662B0397A80088B015 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		759313682B0397AA0088B015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7593136B2B0397AA0088B015 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75B38E5A2B108B54000CF6EF /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		75B38E5C2B108B6F000CF6EF /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,8 @@
 				758CF8FB2B06045000A4B493 /* CalendarTabView */,
 				758CF9002B060A3000A4B493 /* ChatTabView */,
 				758CF9052B06190800A4B493 /* AccountTabView */,
+				75B38E5A2B108B54000CF6EF /* ColorPalette.swift */,
+				75B38E5C2B108B6F000CF6EF /* Typography.swift */,
 			);
 			path = MedScreen;
 			sourceTree = "<group>";
@@ -215,6 +221,8 @@
 				758CF8ED2B051BD600A4B493 /* MainView.swift in Sources */,
 				758CF8F12B05EED500A4B493 /* GreetingView.swift in Sources */,
 				759313652B0397A80088B015 /* MedScreenApp.swift in Sources */,
+				75B38E5D2B108B6F000CF6EF /* Typography.swift in Sources */,
+				75B38E5B2B108B54000CF6EF /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
