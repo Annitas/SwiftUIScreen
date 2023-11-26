@@ -4,68 +4,33 @@ import SwiftUI
 struct CircleMenuView: View {
     var body: some View {
         HStack {
-            let circleSize = UIScreen.main.bounds.width/4 - 15
-            VStack {
-                ZStack{
-                    Circle()
-                        .fill(AllColors.backgroundSearchColor)
-                        .frame(width: circleSize, height: circleSize)
-                    Images.bubbles
-                        .resizable()
-                        .frame(width: circleSize/2, height: circleSize/2)
-                        .shadow(radius: 7)
-                        .foregroundColor(AllColors.dateTextColor)
-                }
-                Text("Covid 19")
-                    .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors.searchTextColor)
+            CircleCategory(menuText: "Covid 19", menuImage: Images.bubbles)
+            CircleCategory(menuText: "Doctor", menuImage: Images.brainHead)
+            CircleCategory(menuText: "Medicine", menuImage: Images.pills)
+            CircleCategory(menuText: "Hospital", menuImage: Images.crossCase)
+        }
+    }
+}
+
+struct CircleCategory: View {
+    let circleSize = UIScreen.main.bounds.width/4 - 15
+    let menuText: String
+    let menuImage: Image
+    var body: some View {
+        VStack {
+            ZStack{
+                Circle()
+                    .fill(AllColors.backgroundSearchColor)
+                    .frame(width: circleSize, height: circleSize)
+                menuImage
+                    .resizable()
+                    .frame(width: circleSize/2, height: circleSize/2)
+                    .shadow(radius: 7)
+                    .foregroundColor(AllColors.dateTextColor)
             }
-            VStack {
-                ZStack{
-                    Circle()
-                        .fill(AllColors.backgroundSearchColor)
-                        .frame(width: circleSize, height: circleSize)
-                    Images.brainHead
-                        .resizable()
-                        .frame(width: circleSize/2, height: circleSize/2)
-                        .shadow(radius: 7)
-                        .foregroundColor(AllColors.dateTextColor)
-                }
-                Text("Doctor")
-                    .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors.searchTextColor)
-            }
-            
-            VStack {
-                ZStack{
-                    Circle()
-                        .fill(AllColors.backgroundSearchColor)
-                        .frame(width: circleSize, height: circleSize)
-                    Images.pills
-                        .resizable()
-                        .frame(width: circleSize/2, height: circleSize/2)
-                        .shadow(radius: 7)
-                        .foregroundColor(AllColors.dateTextColor)
-                }
-                Text("Medicine")
-                    .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors.searchTextColor)
-            }
-            VStack {
-                ZStack{
-                    Circle()
-                        .fill(AllColors.backgroundSearchColor)
-                        .frame(width: circleSize, height: circleSize)
-                    Images.crossCase
-                        .resizable()
-                        .frame(width: circleSize/2, height: circleSize/2)
-                        .shadow(radius: 7)
-                        .foregroundColor(AllColors.dateTextColor)
-                }
-                Text("Hospital")
-                    .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors.searchTextColor)
-            }
+            Text(menuText)
+                .font(.system(size: 15, weight: .light, design: .default))
+                .foregroundColor(AllColors.searchTextColor)
         }
     }
 }
