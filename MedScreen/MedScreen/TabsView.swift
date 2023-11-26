@@ -1,25 +1,25 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TabsView: View {
     var body: some View {
         TabView {
-            MainView()
+            HomeScreenView()
                 .tabItem {
-                    Label("Home", systemImage: "house")
+                    Label(Typography.tabHome, systemImage: "house")
                 }
             CalendarTab()
                 .tabItem {
-                    Label("Calendar", systemImage: "calendar")
+                    Label(Typography.tabCalendar, systemImage: "calendar")
                 }
             ChatView()
                 .tabItem {
-                    Label("Chat", systemImage: "message")
+                    Label(Typography.tabChat, systemImage: "message")
                 }
             AccountView()
                 .tabItem {
                     
-                    Label("Account", systemImage: "person.fill")
+                    Label(Typography.tabAccount, systemImage: "person.fill")
                 }
         }
     }    

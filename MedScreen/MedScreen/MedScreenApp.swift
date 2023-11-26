@@ -5,7 +5,7 @@ import SwiftUI
 struct MedScreenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabsView()
         }
     }
 }

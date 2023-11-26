@@ -5,17 +5,17 @@ struct SearchView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: "magnifyingglass.circle")
-                    .foregroundColor(AllColors().gray)
+                Images.magnifyingGlass
+                    .foregroundColor(AllColors.gray)
                     .font(.system(size: 25))
-                Text("Search doctor or health issue")
+                Text(Typography.searchHint)
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().searchTextColor)
+                    .foregroundColor(AllColors.searchTextColor)
                 Spacer()
             }
             .padding(8)
         }
-        .background(AllColors().backgroundSearchColor)
+        .background(AllColors.backgroundSearchColor)
         .frame(width: UIScreen.main.bounds.width - 35,
                height: 40)
         .cornerRadius(10)

@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct BlueDocCardView: View {
+struct SelectedDocCardView: View {
     var body: some View {
         VStack {
             HStack() {
@@ -15,42 +15,42 @@ struct BlueDocCardView: View {
                     .shadow(radius: 7)
                     .padding()
                 VStack(alignment: .leading) {
-                    Text("Dr. Imran Sayahir")
-                        .foregroundColor(AllColors().basicTextColor)
+                    Text(Typography.generalDoctorName)
+                        .foregroundColor(AllColors.basicTextColor)
                         .font(.system(size: 24, weight: .bold, design: .default))
-                    Text("General Doctor")
-                        .foregroundColor(AllColors().basicTextColor)
+                    Text(Typography.generalDoctor)
+                        .foregroundColor(AllColors.basicTextColor)
                         .font(.system(size: 20, weight: .light, design: .default))
                 }
-                Image(systemName: "arrow.right.circle")
-                    .foregroundColor(AllColors().basicTextColor)
+                Images.arrowRight
+                    .foregroundColor(AllColors.basicTextColor)
                     .font(.system(size: 25))
                 Spacer()
             }
             Divider()
                 .background(Color.white)
             HStack {
-                Image(systemName: "calendar")
-                    .foregroundColor(AllColors().basicTextColor)
-                Text("Sunday, 12 June")
+                Images.calendar
+                    .foregroundColor(AllColors.basicTextColor)
+                Text(Typography.dateDay)
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().basicTextColor)
+                    .foregroundColor(AllColors.basicTextColor)
                 Spacer()
-                Image(systemName: "clock.fill")
-                    .foregroundColor(AllColors().basicTextColor)
-                Text("11:00 - 12:00 AM")
+                Images.clockImage
+                    .foregroundColor(AllColors.basicTextColor)
+                Text(Typography.openHours)
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().basicTextColor)
+                    .foregroundColor(AllColors.basicTextColor)
             }
             .padding(8)
         }
-        .background(AllColors().dateTextColor)
-        .frame(width: UIScreen.main.bounds.width - 35,
-               height: 150)
-        .cornerRadius(10)
+        .background(AllColors.dateTextColor)
+        .frame(height: 150)
+        .padding(.horizontal, 3)
+        .cornerRadius(20)
     }
 }
 
 #Preview {
-    BlueDocCardView()
+    SelectedDocCardView()
 }

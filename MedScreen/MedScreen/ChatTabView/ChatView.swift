@@ -13,12 +13,12 @@ struct ChatMessageView: View {
     var body: some View {
         Text(message)
             .padding()
-            .background(AllColors().blue)
-            .foregroundColor(AllColors().basicTextColor)
+            .background(AllColors.blue)
+            .foregroundColor(AllColors.basicTextColor)
             .clipShape(RoundedRectangle(cornerRadius: 25, style: .continuous))
             .listRowSeparator(.hidden)
             .overlay(alignment: direction == .left ? .bottomLeading : .bottomTrailing) {
-                Image(systemName: "arrowtriangle.down.fill")
+                Images.triangleArrow
                     .font(.title)
                     .rotationEffect(.degrees(direction == .left ? 45 :  -45))
                     .offset(x: direction == .left ? -10 : 10,
@@ -29,7 +29,7 @@ struct ChatMessageView: View {
 }
 
 struct ChatView: View {
-    let messages = ["Hello!", "So how do I make an appointment on your couch?", "Hiiii"]
+    let messages = [Typography.hello, Typography.chatQuestion, Typography.hi]
     
     var body: some View {
         List(messages, id: \.self) { message in

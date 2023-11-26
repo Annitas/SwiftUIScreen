@@ -7,10 +7,10 @@ struct AccountView: View {
             Image("avatar")
             
             HStack {
-                Text("John Nolan")
+                Text(Typography.personName)
                     .font(.title2)
                 Spacer()
-                Text("24 years old")
+                Text(Typography.personYear)
                     .font(.title2)
             }
             .padding()
