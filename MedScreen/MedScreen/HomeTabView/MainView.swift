@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct MainView: View {
+struct HomeScreenView: View {
     var body: some View {
         ScrollView {
             LazyVStack(alignment: .leading) {
@@ -19,6 +19,6 @@ struct MainView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TabsView()
     }
 }

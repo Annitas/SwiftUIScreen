@@ -17,7 +17,7 @@
 		758CF8FD2B0605EA00A4B493 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CF8FC2B0605EA00A4B493 /* ChatView.swift */; };
 		758CF8FF2B06062E00A4B493 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758CF8FE2B06062E00A4B493 /* AccountView.swift */; };
 		759313652B0397A80088B015 /* MedScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759313642B0397A80088B015 /* MedScreenApp.swift */; };
-		759313672B0397A80088B015 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759313662B0397A80088B015 /* ContentView.swift */; };
+		759313672B0397A80088B015 /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759313662B0397A80088B015 /* TabsView.swift */; };
 		759313692B0397AA0088B015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759313682B0397AA0088B015 /* Assets.xcassets */; };
 		7593136C2B0397AA0088B015 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7593136B2B0397AA0088B015 /* Preview Assets.xcassets */; };
 		75B38E5B2B108B54000CF6EF /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B38E5A2B108B54000CF6EF /* ColorPalette.swift */; };
@@ -36,7 +36,7 @@
 		758CF8FE2B06062E00A4B493 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		759313612B0397A80088B015 /* MedScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		759313642B0397A80088B015 /* MedScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedScreenApp.swift; sourceTree = "<group>"; };
-		759313662B0397A80088B015 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		759313662B0397A80088B015 /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		759313682B0397AA0088B015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7593136B2B0397AA0088B015 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75B38E5A2B108B54000CF6EF /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				759313642B0397A80088B015 /* MedScreenApp.swift */,
-				759313662B0397A80088B015 /* ContentView.swift */,
+				759313662B0397A80088B015 /* TabsView.swift */,
 				759313682B0397AA0088B015 /* Assets.xcassets */,
 				7593136A2B0397AA0088B015 /* Preview Content */,
 				758CF8F82B05F25B00A4B493 /* HomeTabView */,
@@ -215,7 +215,7 @@
 				758CF8FD2B0605EA00A4B493 /* ChatView.swift in Sources */,
 				758CF8F32B05EF9400A4B493 /* BlueDocCardView.swift in Sources */,
 				758CF8FF2B06062E00A4B493 /* AccountView.swift in Sources */,
-				759313672B0397A80088B015 /* ContentView.swift in Sources */,
+				759313672B0397A80088B015 /* TabsView.swift in Sources */,
 				758CF8F52B05F02B00A4B493 /* SearchView.swift in Sources */,
 				758CF8FA2B05FFB300A4B493 /* CalendarView.swift in Sources */,
 				758CF8ED2B051BD600A4B493 /* MainView.swift in Sources */,

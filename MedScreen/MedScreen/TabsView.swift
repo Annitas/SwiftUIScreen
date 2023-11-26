@@ -1,10 +1,10 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TabsView: View {
     var body: some View {
         TabView {
-            MainView()
+            HomeScreenView()
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
