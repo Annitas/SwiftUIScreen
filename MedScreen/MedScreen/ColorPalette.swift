@@ -3,13 +3,13 @@
 import SwiftUI
 
 struct AllColors {
-    let basicTextColor = Color("TextColor")
-    let searchTextColor = Color("SearchText")
-    let backgroundSearchColor = Color("Magnifyer")
-    let dateTextColor = Color("DateBlue")
-    let cardColor = Color("CardColor")
-    let black = Color.black
-    let orange = Color.orange
-    let blue = Color.blue
-    let gray = Color.gray
+    static let basicTextColor = Color("TextColor")
+    static let searchTextColor = Color("SearchText")
+    static let backgroundSearchColor = Color("Magnifyer")
+    static let dateTextColor = Color("DateBlue")
+    static let cardColor = Color("CardColor")
+    static let black = Color.black
+    static let orange = Color.orange
+    static let blue = Color.blue
+    static let gray = Color.gray
 }

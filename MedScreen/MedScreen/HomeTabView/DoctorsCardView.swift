@@ -4,10 +4,10 @@ import SwiftUI
 
 struct DoctorsCardView: View {
     let doctorImage: String
+    let doctorName: String
+    
     var body: some View {
         //Near doctor
-        Text("Near Doctor")
-            .font(.system(size: 20, weight: .bold, design: .default))
         VStack {
             HStack() {
                 Image(doctorImage)
@@ -19,18 +19,18 @@ struct DoctorsCardView: View {
                     }
                     .shadow(radius: 7)
                 VStack(alignment: .leading) {
-                    Text("Dr. Joseph Basito")
-                        .foregroundColor(AllColors().black)
+                    Text(doctorName)
+                        .foregroundColor(AllColors.black)
                         .font(.system(size: 20, weight: .bold, design: .default))
                     Text("Dental Specialist")
-                        .foregroundColor(AllColors().searchTextColor)
+                        .foregroundColor(AllColors.searchTextColor)
                         .font(.system(size: 16, weight: .light, design: .default))
                 }
                 Images.mapCircle
-                    .foregroundColor(AllColors().black)
+                    .foregroundColor(AllColors.black)
                     .font(.system(size: 20))
                 Text("1.2 km")
-                    .foregroundColor(AllColors().black)
+                    .foregroundColor(AllColors.black)
                     .font(.system(size: 13, weight: .light, design: .default))
             }
             .padding(8)
@@ -38,20 +38,20 @@ struct DoctorsCardView: View {
                 .background(Color.gray)
             HStack {
                 Images.clockImage
-                    .foregroundColor(AllColors().orange)
+                    .foregroundColor(AllColors.orange)
                 Text("4,8 (120 Reviews)")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().orange)
+                    .foregroundColor(AllColors.orange)
                 Spacer()
                 Images.clockImage
-                    .foregroundColor(AllColors().blue)
+                    .foregroundColor(AllColors.blue)
                 Text("11:00 - 12:00 AM")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().blue)
+                    .foregroundColor(AllColors.blue)
             }
             .padding(8)
         }
-        .background(AllColors().cardColor)
+        .background(AllColors.cardColor)
         .frame(width: UIScreen.main.bounds.width - 35,
                height: 130)
         .cornerRadius(10)
@@ -62,5 +62,5 @@ struct DoctorsCardView: View {
 }
 
 #Preview {
-    DoctorsCardView(doctorImage: "dentalCat")
+    DoctorsCardView(doctorImage: "dentalCat", doctorName: "Dr. Joseph Basito")
 }

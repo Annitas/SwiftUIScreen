@@ -16,14 +16,14 @@ struct SelectedDocCardView: View {
                     .padding()
                 VStack(alignment: .leading) {
                     Text("Dr. Imran Sayahir")
-                        .foregroundColor(AllColors().basicTextColor)
+                        .foregroundColor(AllColors.basicTextColor)
                         .font(.system(size: 24, weight: .bold, design: .default))
                     Text("General Doctor")
-                        .foregroundColor(AllColors().basicTextColor)
+                        .foregroundColor(AllColors.basicTextColor)
                         .font(.system(size: 20, weight: .light, design: .default))
                 }
                 Images.arrowRight
-                    .foregroundColor(AllColors().basicTextColor)
+                    .foregroundColor(AllColors.basicTextColor)
                     .font(.system(size: 25))
                 Spacer()
             }
@@ -31,20 +31,20 @@ struct SelectedDocCardView: View {
                 .background(Color.white)
             HStack {
                 Images.calendar
-                    .foregroundColor(AllColors().basicTextColor)
+                    .foregroundColor(AllColors.basicTextColor)
                 Text("Sunday, 12 June")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().basicTextColor)
+                    .foregroundColor(AllColors.basicTextColor)
                 Spacer()
                 Images.clockImage
-                    .foregroundColor(AllColors().basicTextColor)
+                    .foregroundColor(AllColors.basicTextColor)
                 Text("11:00 - 12:00 AM")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().basicTextColor)
+                    .foregroundColor(AllColors.basicTextColor)
             }
             .padding(8)
         }
-        .background(AllColors().dateTextColor)
+        .background(AllColors.dateTextColor)
         .frame(height: 150)
         .padding(.horizontal, 3)
         .cornerRadius(20)

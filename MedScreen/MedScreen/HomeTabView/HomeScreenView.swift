@@ -10,8 +10,10 @@ struct HomeScreenView: View {
                 SearchView()
                 CircleMenuView()
                 Spacer()
-                DoctorsCardView(doctorImage: "dentalCat")
-                DoctorsCardView(doctorImage: "doctorCat")
+                Text("Near Doctor")
+                    .font(.system(size: 20, weight: .bold, design: .default))
+                DoctorsCardView(doctorImage: "dentalCat", doctorName: "Dr Joseph Basito")
+                DoctorsCardView(doctorImage: "doctorCat", doctorName: "Dr Imran Sayahir")
             }
             .padding()
         }

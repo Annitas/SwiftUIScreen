@@ -6,16 +6,16 @@ struct SearchView: View {
         VStack {
             HStack {
                 Images.magnifyingGlass
-                    .foregroundColor(AllColors().gray)
+                    .foregroundColor(AllColors.gray)
                     .font(.system(size: 25))
                 Text("Search doctor or health issue")
                     .font(.system(size: 15, weight: .light, design: .default))
-                    .foregroundColor(AllColors().searchTextColor)
+                    .foregroundColor(AllColors.searchTextColor)
                 Spacer()
             }
             .padding(8)
         }
-        .background(AllColors().backgroundSearchColor)
+        .background(AllColors.backgroundSearchColor)
         .frame(width: UIScreen.main.bounds.width - 35,
                height: 40)
         .cornerRadius(10)
