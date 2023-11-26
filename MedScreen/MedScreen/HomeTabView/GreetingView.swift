@@ -5,9 +5,9 @@ struct GreetingView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("Hello")
+                Text(Typography.hello)
                     .foregroundColor(.secondary)
-                Text("Hi James")
+                Text(Typography.hi)
                     .font(.system(size: 25, weight: .bold, design: .default))
             }
             Spacer()

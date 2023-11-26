@@ -8,7 +8,7 @@ struct SearchView: View {
                 Images.magnifyingGlass
                     .foregroundColor(AllColors.gray)
                     .font(.system(size: 25))
-                Text("Search doctor or health issue")
+                Text(Typography.searchHint)
                     .font(.system(size: 15, weight: .light, design: .default))
                     .foregroundColor(AllColors.searchTextColor)
                 Spacer()

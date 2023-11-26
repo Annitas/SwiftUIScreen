@@ -4,10 +4,10 @@ import SwiftUI
 struct CircleMenuView: View {
     var body: some View {
         HStack {
-            CircleCategory(menuText: "Covid 19", menuImage: Images.bubbles)
-            CircleCategory(menuText: "Doctor", menuImage: Images.brainHead)
-            CircleCategory(menuText: "Medicine", menuImage: Images.pills)
-            CircleCategory(menuText: "Hospital", menuImage: Images.crossCase)
+            CircleCategory(menuText: Typography.circleCovid, menuImage: Images.bubbles)
+            CircleCategory(menuText: Typography.circleDoctor, menuImage: Images.brainHead)
+            CircleCategory(menuText: Typography.circleMedicine, menuImage: Images.pills)
+            CircleCategory(menuText: Typography.circleHospital, menuImage: Images.crossCase)
         }
     }
 }

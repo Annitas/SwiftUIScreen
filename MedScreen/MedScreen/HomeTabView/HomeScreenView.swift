@@ -10,10 +10,14 @@ struct HomeScreenView: View {
                 SearchView()
                 CircleMenuView()
                 Spacer()
-                Text("Near Doctor")
+                Text(Typography.nearDoctorTitle)
                     .font(.system(size: 20, weight: .bold, design: .default))
-                DoctorsCardView(doctorImage: "dentalCat", doctorName: "Dr Joseph Basito")
-                DoctorsCardView(doctorImage: "doctorCat", doctorName: "Dr Imran Sayahir")
+                DoctorsCardView(doctorImage: "dentalCat", 
+                                doctorName: Typography.generalDoctorName,
+                                doctorType: Typography.generalDoctor)
+                DoctorsCardView(doctorImage: "doctorCat",
+                                doctorName: Typography.dentalDoctorName,
+                                doctorType: Typography.dentalDoctor)
             }
             .padding()
         }

@@ -11,4 +11,6 @@ struct Images {
     static let brainHead = Image(systemName: "brain.head.profile")
     static let pills = Image(systemName: "pills.fill")
     static let crossCase = Image(systemName: "cross.case.fill")
+    static let triangleArrow = Image(systemName: "arrowtriangle.down.fill")
+    
 }

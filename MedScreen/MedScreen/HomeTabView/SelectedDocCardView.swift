@@ -15,10 +15,10 @@ struct SelectedDocCardView: View {
                     .shadow(radius: 7)
                     .padding()
                 VStack(alignment: .leading) {
-                    Text("Dr. Imran Sayahir")
+                    Text(Typography.generalDoctorName)
                         .foregroundColor(AllColors.basicTextColor)
                         .font(.system(size: 24, weight: .bold, design: .default))
-                    Text("General Doctor")
+                    Text(Typography.generalDoctor)
                         .foregroundColor(AllColors.basicTextColor)
                         .font(.system(size: 20, weight: .light, design: .default))
                 }
@@ -32,13 +32,13 @@ struct SelectedDocCardView: View {
             HStack {
                 Images.calendar
                     .foregroundColor(AllColors.basicTextColor)
-                Text("Sunday, 12 June")
+                Text(Typography.dateDay)
                     .font(.system(size: 15, weight: .light, design: .default))
                     .foregroundColor(AllColors.basicTextColor)
                 Spacer()
                 Images.clockImage
                     .foregroundColor(AllColors.basicTextColor)
-                Text("11:00 - 12:00 AM")
+                Text(Typography.openHours)
                     .font(.system(size: 15, weight: .light, design: .default))
                     .foregroundColor(AllColors.basicTextColor)
             }
