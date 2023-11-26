@@ -25,7 +25,7 @@ struct DoctorsCardView: View {
                         .foregroundColor(AllColors().searchTextColor)
                         .font(.system(size: 16, weight: .light, design: .default))
                 }
-                Image(systemName: "mappin.circle")
+                Images.mapCircle
                     .foregroundColor(AllColors().black)
                     .font(.system(size: 20))
                 Text("1.2 km")
@@ -36,13 +36,13 @@ struct DoctorsCardView: View {
             Divider()
                 .background(Color.gray)
             HStack {
-                Image(systemName: "clock.fill")
+                Images.clockImage
                     .foregroundColor(AllColors().orange)
                 Text("4,8 (120 Reviews)")
                     .font(.system(size: 15, weight: .light, design: .default))
                     .foregroundColor(AllColors().orange)
                 Spacer()
-                Image(systemName: "clock.fill")
+                Images.clockImage
                     .foregroundColor(AllColors().blue)
                 Text("11:00 - 12:00 AM")
                     .font(.system(size: 15, weight: .light, design: .default))
@@ -75,7 +75,7 @@ struct DoctorsCardView: View {
                         .foregroundColor(Color("SearchText"))
                         .font(.system(size: 16, weight: .light, design: .default))
                 }
-                Image(systemName: "mappin.circle")
+                Images.mapCircle
                     .foregroundColor(AllColors().black)
                     .font(.system(size: 20))
                 Text("1.2 km")
@@ -86,13 +86,13 @@ struct DoctorsCardView: View {
             Divider()
                 .background(AllColors().gray)
             HStack {
-                Image(systemName: "clock.fill")
+                Images.clockImage
                     .foregroundColor(AllColors().orange)
                 Text("4,8 (120 Reviews)")
                     .font(.system(size: 15, weight: .light, design: .default))
                     .foregroundColor(AllColors().orange)
                 Spacer()
-                Image(systemName: "clock.fill")
+                Images.clockImage
                     .foregroundColor(AllColors().blue)
                 Text("11:00 - 12:00 AM")
                     .font(.system(size: 15, weight: .light, design: .default))

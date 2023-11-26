@@ -5,7 +5,7 @@ struct SearchView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: "magnifyingglass.circle")
+                Images.magnifyingGlass
                     .foregroundColor(AllColors().gray)
                     .font(.system(size: 25))
                 Text("Search doctor or health issue")

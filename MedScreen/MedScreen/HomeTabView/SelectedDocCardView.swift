@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct BlueDocCardView: View {
+struct SelectedDocCardView: View {
     var body: some View {
         VStack {
             HStack() {
@@ -22,7 +22,7 @@ struct BlueDocCardView: View {
                         .foregroundColor(AllColors().basicTextColor)
                         .font(.system(size: 20, weight: .light, design: .default))
                 }
-                Image(systemName: "arrow.right.circle")
+                Images.arrowRight
                     .foregroundColor(AllColors().basicTextColor)
                     .font(.system(size: 25))
                 Spacer()
@@ -30,13 +30,13 @@ struct BlueDocCardView: View {
             Divider()
                 .background(Color.white)
             HStack {
-                Image(systemName: "calendar")
+                Images.calendar
                     .foregroundColor(AllColors().basicTextColor)
                 Text("Sunday, 12 June")
                     .font(.system(size: 15, weight: .light, design: .default))
                     .foregroundColor(AllColors().basicTextColor)
                 Spacer()
-                Image(systemName: "clock.fill")
+                Images.clockImage
                     .foregroundColor(AllColors().basicTextColor)
                 Text("11:00 - 12:00 AM")
                     .font(.system(size: 15, weight: .light, design: .default))
@@ -52,5 +52,5 @@ struct BlueDocCardView: View {
 }
 
 #Preview {
-    BlueDocCardView()
+    SelectedDocCardView()
 }

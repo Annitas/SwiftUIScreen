@@ -6,7 +6,7 @@ struct HomeScreenView: View {
         ScrollView {
             LazyVStack(alignment: .leading) {
                 GreetingView()
-                BlueDocCardView()
+                SelectedDocCardView()
                 SearchView()
                 CircleMenuView()
                 Spacer()

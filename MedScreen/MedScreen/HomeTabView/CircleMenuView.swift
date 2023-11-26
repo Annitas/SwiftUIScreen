@@ -10,7 +10,7 @@ struct CircleMenuView: View {
                     Circle()
                         .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
-                    Image(systemName: "bubbles.and.sparkles")
+                    Images.bubbles
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
@@ -25,7 +25,7 @@ struct CircleMenuView: View {
                     Circle()
                         .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
-                    Image(systemName: "brain.head.profile")
+                    Images.brainHead
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
@@ -41,7 +41,7 @@ struct CircleMenuView: View {
                     Circle()
                         .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
-                    Image(systemName: "pills.fill")
+                    Images.pills
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
@@ -56,7 +56,7 @@ struct CircleMenuView: View {
                     Circle()
                         .fill(AllColors().backgroundSearchColor)
                         .frame(width: circleSize, height: circleSize)
-                    Image(systemName: "cross.case.fill")
+                    Images.crossCase
                         .resizable()
                         .frame(width: circleSize/2, height: circleSize/2)
                         .shadow(radius: 7)
