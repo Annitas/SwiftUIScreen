@@ -45,9 +45,9 @@ struct SelectedDocCardView: View {
             .padding(8)
         }
         .background(AllColors().dateTextColor)
-        .frame(width: UIScreen.main.bounds.width - 35,
-               height: 150)
-        .cornerRadius(10)
+        .frame(height: 150)
+        .padding(.horizontal, 3)
+        .cornerRadius(20)
     }
 }
 

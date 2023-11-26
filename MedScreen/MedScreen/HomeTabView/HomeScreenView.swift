@@ -10,7 +10,8 @@ struct HomeScreenView: View {
                 SearchView()
                 CircleMenuView()
                 Spacer()
-                DoctorsCardView()
+                DoctorsCardView(doctorImage: "dentalCat")
+                DoctorsCardView(doctorImage: "doctorCat")
             }
             .padding()
         }
